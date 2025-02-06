@@ -12,6 +12,7 @@ export const loginPostAsync = createAsyncThunk('loginSlicer/loginPostAsync', asy
 
     return res; // Promise 객체 리턴
 })
+
 const cookie = getCookie('member');
 
 const loginSlicer = createSlice({

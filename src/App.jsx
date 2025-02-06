@@ -15,7 +15,7 @@ function App() {
         <>
             <div>
                 <Link to={'/'}>Home</Link>&nbsp;
-                <Link to={'/item'}>Item</Link>&nbsp;
+                <Link to={'/items'}>Item</Link>&nbsp;
                 {
                     !email ? <Link to={'/login'}>Login</Link> : <Link to={'/logout'}>Logout</Link>
                 }
@@ -24,7 +24,7 @@ function App() {
             </div>
             <Routes>
                 <Route path='/' element={<Home />} />
-                <Route path='/item' element={<Item />} />
+                <Route path='/items' element={<Item />} />
                 <Route path='/login' element={<Login />} />
                 <Route path='/logout' element={<Logout />} />
             </Routes>
